@@ -8,22 +8,30 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    
+    background-color: #1F2937;
     
 }
+h2{
 
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(22, 8, 8, 0.5);
+
+}
 
 .header {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    transition: transform 0.3s ease-out;
     
-    padding-top: 6px;
+    padding-top: 5px;
     flex-wrap: wrap;
 }
+.header:hover {
+  transform: translateY(8px);
 
+
+}
 .logo{
     color:  #F9FAF8;
     font-size: 24px;
@@ -32,7 +40,9 @@ body{
     align-items: flex-start;
     flex:1 1 auto;
     padding-left: 20px;
+    
 }
+
 
 .links{
     display: flex;
@@ -54,7 +64,10 @@ ul {
 li{
     font-size: 18px;
     color: #E5E7E9;
+    
 }
+
+
 
 .hero{
     background-color: #01060e;
@@ -63,7 +76,8 @@ li{
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(22, 8, 8, 0.5);
+
     
 }
 
@@ -151,7 +165,7 @@ li{
     bottom: 25%;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-     /* Default font size */
+    
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
     font-style: italic;
     font-weight: lighter;
@@ -174,8 +188,12 @@ li{
     height: 45px;
     width: 100px;
     
-}
 
+}
+.hero-button:hover{
+  scale: 1.03 ;
+  
+}
 
 
 .section1 {
@@ -183,6 +201,7 @@ li{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: whitesmoke;
   }
   .container {
     position: relative;
@@ -192,7 +211,7 @@ li{
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 500px;
-    margin: auto;
+    padding: 10px;
   }
   .container .box {
     position: relative;
@@ -204,9 +223,11 @@ li{
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
+    border-radius: 5px;
   }
   .container:hover .box {
     transform: rotateY(25deg);
+    
   }
   .container .box:hover ~ .box {
     transform: rotateY(-25deg);
@@ -230,7 +251,7 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg,rgb(201, 204, 27),#000);
+    background: linear-gradient(180deg,rgba(227, 252, 8, 0.918),#fffdfd);
     z-index: 1;
     opacity: 0;
     transition: 0.5s;
@@ -303,59 +324,59 @@ li{
     
     color: #1F2937;
 }
-.section3 {
-    background-color: rgb(252, 252, 252);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 7% 15%;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  
 }
 
-.call-to-action{
-    background-color: #3882f6;
-    flex: 1 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    border-radius: 5px;
-    max-height: min-content;
-    padding: 2% 5%;
-    flex-wrap: wrap;
-    
+.contact-section-header > h2 {
+  font-size: 6rem;
 }
 
-.first-line,
-.secondary-text {
-    color: #E5E7E9;
-    font-size: large;
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
 }
 
-.call-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: start;
-    flex: 1;
-    padding: 5% 0% 5% 0%
-    
+.contact-section-header > p {
+  font-style: italic;
+  font-size: large;
 }
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-.call-button {
-    color: #E5E7E9;
-    background-color: #3882f6;
-    border-radius: 5px;
-    border: 2px solid #E5E7E9;
-    min-width: max-content;
-    margin-right: 5%;    
-    width: 125px;
-    height: 30px; 
-    
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+a {
+  color: white;
 }
 
 .footer {
-    background-color: rgba(26, 49, 153, 0.274);
+    background-color: #1f314ba4;
     padding: 10px 15px;
     text-align: center;
 }
