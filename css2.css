@@ -80,7 +80,7 @@ li{
     
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 568px) {
   .hero{
     background-image: url('./Ilia-images/30855670_2140741082815769_6424140222811865088_n.jpg'); /* Replace with your image path */
     background-size: cover; 
