@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    margin: 0;
     
 }
 h2 {
@@ -22,7 +23,7 @@ h2 {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-out;
-    padding-top: 5px;
+    
     flex-wrap: wrap;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.5);
 }
@@ -71,7 +72,7 @@ li{
 .hero{
     background-color: #01060e;
     display: flex;
-    padding: 30px 20px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
@@ -121,7 +122,7 @@ li{
     flex-basis: 50%;
     gap: 5px;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.5);
-    
+    margin-bottom: 22px;
 }
 
 .image-container{
@@ -136,6 +137,7 @@ li{
     opacity: 1;
     visibility: visible;
     position: relative;
+    max-height: 92vh;
     
 }
 /* Hide element when the screen width is below 768px */
@@ -343,7 +345,7 @@ li{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  
   height: 660px;
   
   
